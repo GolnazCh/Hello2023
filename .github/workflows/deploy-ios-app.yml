@@ -1,0 +1,12 @@
+on:
+  # Enable manual run
+  workflow_dispatch:
+    inputs:
+      lane:
+        description: "Fastlane lane"
+        required: true
+        default: "beta"
+        type: choice
+        options:
+          - beta
+          - publish
