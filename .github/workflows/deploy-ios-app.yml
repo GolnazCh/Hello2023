@@ -18,8 +18,8 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v3
 
-      - name: Build and Test
-        run: xcodebuild -project Hello2023.xcodeproj -scheme Hello2023 -destination 'platform=iOS Simulator,name=iPhone 12' build test
+      # - name: Build and Test
+        # run: xcodebuild -project Hello2023.xcodeproj -scheme Hello2023 -destination 'platform=iOS Simulator,name=iPhone 14' build test
 
 
       # - name: Install the Apple certificate and provisioning profile
@@ -51,14 +51,14 @@ jobs:
       #     mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
       #     cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles          
 
-      # - name: build archive
-      #   run: |
-      #     xcodebuild -scheme "I am Groot" \
-      #     -archivePath $RUNNER_TEMP/iamgroot.xcarchive \
-      #     -sdk iphoneos \
-      #     -configuration Debug \
-      #     -destination generic/platform=iOS \
-      #     clean archive          
+      - name: build archive
+        run: |
+          xcodebuild -scheme "Hello2023" \
+          -archivePath $RUNNER_TEMP/Hello2023.xcarchive \
+          -sdk iphoneos \
+          -configuration Debug \
+          -destination generic/platform=iOS \
+          clean archive          
 
       # - name: export ipa
       #   env:
