@@ -19,6 +19,7 @@
 		5FB320272B2144F4000D40E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FB320292B2144F5000D40E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FB3202C2B2144F5000D40E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5FB320332B23A8EA000D40E0 /* ExportOptions.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ExportOptions.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		5FB320242B2144F4000D40E0 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				5FB320332B23A8EA000D40E0 /* ExportOptions.xcprivacy */,
 				5FB320252B2144F4000D40E0 /* HelloWorldApp.swift */,
 				5FB320272B2144F4000D40E0 /* ContentView.swift */,
 				5FB320292B2144F5000D40E0 /* Assets.xcassets */,
